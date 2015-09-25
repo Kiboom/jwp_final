@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd">
+	<tlib-version>1.0</tlib-version>
+	<short-name>nf</short-name>
+	<uri>http://nhnnext.org/functions</uri>
+	<function>
+		<description>문자열의 HTML을 Escape한다.</description>
+		<name>h</name>
+		<function-class>core.web.tags.NextFunctions</function-class>
+		<function-signature>
+			java.lang.String h(java.lang.String)
+		</function-signature>
+		<example>${nf:h("hello world")}</example>
+	</function>
+	<function>
+		<description>문자열의 새줄기호를 &lt;br&gt; 로 변경한다.</description>
+		<name>br</name>
+		<function-class>core.web.tags.NextFunctions</function-class>
+		<function-signature>
+			java.lang.String br(java.lang.String)
+		</function-signature>
+	</function>
+	<function>
+		<description>문자열의 HTML을 Escape해 주고, 새줄기호를 &lt;br&gt;로 변경한다.</description>
+		<name>hbr</name>
+		<function-class>core.web.tags.NextFunctions</function-class>
+		<function-signature>
+			java.lang.String hbr(java.lang.String)
+		</function-signature>
+	</function>
+</taglib>
